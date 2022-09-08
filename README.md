@@ -41,3 +41,20 @@ Hyderabad is the capital of southern India's Telangana state. A major center for
  >>Oscar Wilde
 
  ---
+ # Fencing
+ Simple jQuery Accordion
+ https://stackoverflow.com/questions/14229842/jquery-simple-accordion
+ ```
+ (function($) {
+    
+  var allPanels = $('.accordion > dd').hide();
+    
+  $('.accordion > dt > a').click(function() {
+    allPanels.slideUp();
+    $(this).parent().next().slideDown();
+    return false;
+  });
+
+})(jQuery);
+```
+**[link to code snippet](https://css-tricks.com/snippets/jquery/simple-jquery-accordion/)**
